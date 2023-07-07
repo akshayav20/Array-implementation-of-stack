@@ -1,0 +1,47 @@
+/* array implementation of stack*/
+
+
+#incIude<stdio.h> #incIude<stdIib.h> int S[50], top=-1; void push();
+void pop(); void display(); main()
+int n,ch;
+printf(“\n Enter the size of 5tdCk:”);
+Scanf(“%d”,&n);
+do
+Printf(“\n\t MENU”);
+Printf(“\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 4.EXIT\n“); Printf(“Enter the choice:”);
+Scanf(“%d”,&ch); Switch (ch)
+Case 1:
+Push(n);
+break;
+case 2:
+pop();
+break; case 3:
+display();
+break;
+case 4:
+break; default;
+printf(“\n\t invalid choice:“);
+) while (ch!==4);
+Void push(int n)
+int item;
+if (top==n-1)
+Printf(“\n stack is overflow: insertion not pos5ible”);
+else
+printf(“\n Enter the element to be inserted:”);
+Scanf(“%d”,&item); top=top+1; S[top]=item;
+return;
+Void pop()
+int item; if(top==-1)
+Printf(“stack empty: deletion not possible”);
+else
+item=5|top];
+top=top-1;
+printf(“deleted item is %d”,item);
+void di5play()
+int i; if(top==-1)
+Printf(“stack empty”);
+else
+i=top;
+while(i>=0)
+Printf(“%d“,[i]); i=i-1;
+return;
