@@ -1,0 +1,155 @@
+# include<stdio.h>
+# define MAX5
+int deque arr[MAX];
+int leh = -1;
+bit right = -1;
+main()
+int choice;
+printf(“l.Input restricted dequeue\n”);
+printf(“ 2.Output re5tricted dequeue\n”);
+printf(“Enter your choice:”);
+scanf(“%d”,&choice:);
+switch(choice)
+case 1:
+input que();
+break;
+case 2:
+output que();
+break;
+default;
+printf(“Wrong choice\n”);
+l/*End of 5witch*/
+}/*End of main()*/
+input que()
+int choice;
+while(1)
+printf(“1.Insertion at rightln”);
+printf(“2.Delete from left\n”);
+printf(“3.Delete from right\n”);
+printf(“4.Display\n”);
+printf(“5.Quit\n”);
+printf(“Enter your choice:”);
+scanf(“%d”,&choice:”);
+switch(choice)
+case 1:
+insert right();
+break;
+case 2:
+delete lefi();
+break;
+case 3:
+delete right();
+break;
+case 4:
+display queue();
+break;
+case 5:
+exit();
+default;
+printf(‘TVrong choice\n”);
+Output que()
+int choice;
+while(1)
+printf(“1.Insert at right\n”);
+printf(“2.Insert at leh\n”);
+printf(“3.Delete from left\n”);
+printf(“4.Display\n”);
+printf(“5.Quit\n”);
+printf(“Enter your choice:”);
+scanf(“%d”,&choice:”);
+switch(choice)
+case 1:
+insert right();
+break;
+case 2:
+insert left();
+break;
+case 3:
+delete leh();
+break;
+case 4:
+displaypqueue();
+break;
+case 5:
+exit();
+default;
+printf(‘Wrong choice\n”);
+in5ert right()
+int added item;
+if((left == 0 && right == Max-1) | (left == right +1))
+printf(“Queue Overflow\n”);
+return;
+if(leh == -1)
+left = 0;
+right = 0;
+else
+if(right =MAX-1)
+right = 0;
+else
+right = right+1;
+printf(“Input the element for adding in queue :”);
+scanf(“%d”,&added item);
+dequeue arr[right] = added item;
+insertpleh()
+int added left()
+int added item;
+if((left == 0 && right == MAX-1) || (left == right+1))
+printf(“Queue Overflow\n”);
+return;
+if((left == -1)
+left = 0;
+right = 0;
+lelse
+if(leh==0)
+leh=MAX—1;
+else
+left=left-1;
+printf(“Input the element for adding in queue:”);
+scanf(“%d”,&added item);
+deque arr[left] = added item;
+)
+delete left()
+if(left == - l)
+printf(“Queue Underf1ow\n”);
+return;
+printf(“Element deleted from queue is
+:%d\n”,dequeparr[left]);
+if(lRft == right)
+leh = -1;
+right = -1;
+else
+if(left == MAX-1)
+let= 0;
+else
+leh = left+1;
+delete right()
+if(leh == -1)
+printf(“Element deleted from queue is
+:%d\n”,deque arr[right]);
+if(lRft == right)
+display queue()
+leh = -1;
+right = -1;
+else
+if(right == 0)
+right=MAX-1;
+else
+right=right-1;
+int front pos = left,rear pos = right;
+if(left ==-1)
+printf(“Queue is empty\n”);
+return;
+printf(“Queue elements :\n”);
+if( frontppos <= rear05 )
+while(frontpos<= rear pos)
+printf(“%d”,deque arr[front pos]);
+front pos++;
+else
+while(front pos<=MAX-1)
+printf(“%d”,deque arr[front pos]);
+front pos++;
+front pos=0;
+while(front pos<=rear pos)
+printf(“%d”,deque arr[front pos]);
+front pO5 +;
+printf(‘5n”);
